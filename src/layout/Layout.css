@@ -114,11 +114,7 @@
 
 
 /*swal*/
-.swal{
-    display: flex ;
-    justify-content: center;
-    height: 50px;
-    align-items: center ;
+.swal{ 
     font-size: 0.75rem !important;
     margin-top: 4.5vh; 
     background-color:rgb(250, 250, 250);
