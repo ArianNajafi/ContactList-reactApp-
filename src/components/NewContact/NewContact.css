@@ -1,0 +1,72 @@
+.newContact{
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    width: 80vw;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.addNewContact_btn{
+    margin-top: 20px;
+    width: 50px;
+    outline: none;
+}
+.addContact_title{
+font-size: 1.6rem;
+margin: 0;
+font-weight: 400;
+}
+.nameInput_lable{
+    margin: 25px 0 5px 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+}
+.emailInput_lable{
+    margin: 15px 0 5px 0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+}
+.nameInput{
+    width: 78vw;
+    height: 25px;
+    font-size: 0.9rem;
+    padding: 2px 6px;
+    outline: solid 0.5px rgb(192, 192, 192);
+    border: none;
+    border-radius: 4px;
+    color: rgb(94, 94, 94);
+}
+.nameInput:focus{
+    outline: solid 1px rgb(112, 157, 216);
+}
+
+.emailInput{
+    width: 78vw;
+    height: 25px;
+    font-size: 0.9rem;
+    padding: 2px 6px;
+    outline: solid 0.5px rgb(192, 192, 192);
+    border: none;
+    border-radius: 4px;
+    color: rgb(94, 94, 94);
+}
+.emailInput:focus{
+    outline: solid 1px#0ea5e9;
+}
+
+.addNewContact_btn{
+    width: 63px;
+    height: 35px;
+    border: none;
+    border-radius: 4px;
+    background-color:#0ea5e9;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0.3px 0.2px 3px rgb(184, 184, 184);
+    font-weight: 500;
+}

@@ -1,0 +1,47 @@
+.contactPlusLine{
+    display: flex;
+    flex-direction: column;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rgb(219, 204, 204); */
+    max-width: 79vw;
+    margin-bottom: 5px;
+    height: 50px
+}
+.logoAndContactInfo_Div{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.contactInfo{
+    margin-left: 2px;
+}
+.contact_logo{
+    margin-right: 0.6vw;
+    font-size: 1.6rem;
+     color: rgb(0, 22, 51);
+}
+.contactName{
+    margin: 0;
+    font-weight: 600;
+}
+.contactEmail{
+    margin: 0;
+    font-weight: 400;
+    color: rgb(77, 77, 77);
+    font-size: 0.8rem;
+}
+.deleteBtn{
+    color: rgb(255, 94, 94);
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.line{
+    border: none;
+    background-color: rgb(209, 209, 209);
+    height: 0.1px;
+    width: 80vw;
+}
