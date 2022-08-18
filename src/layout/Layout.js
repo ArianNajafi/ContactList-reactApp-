@@ -1,4 +1,5 @@
 import React, { Children, useState } from "react";
+import Swal from "sweetalert2";
 import Header from "../components/Header/Header";
 import "./Layout.css"
 
@@ -14,7 +15,17 @@ const Layout = ({ children }) => {
             const newContacts = contacts.filter((item) => {
                 return item.id !== contact.id;
             })
-            setContact(newContacts)
+            setContact(newContacts);
+            Swal.fire({
+                text: "Contact deleted ✅",
+                position: "top",
+                width: 190,
+                showConfirmButton: false,
+                customClass: "swal",
+                timer: 1500,
+                backdrop: false,
+                background: "rgb(250, 250, 250)",
+            })
         }
 
         else if (actionName === "editContact") {
@@ -25,6 +36,17 @@ const Layout = ({ children }) => {
             const updatedContacts = [...contacts];
             updatedContacts[index] = selectedContact;
             setContact(updatedContacts);
+
+            Swal.fire({
+                text: "Contact edited ✅",
+                position: "top",
+                width: 190,
+                showConfirmButton: false,
+                customClass: "swal",
+                timer: 1700,
+                backdrop: false,
+                background: "rgb(250, 250, 250)",
+            })
         }
     }
 

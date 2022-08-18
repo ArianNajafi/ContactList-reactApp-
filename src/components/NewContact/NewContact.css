@@ -33,7 +33,7 @@ font-weight: 400;
 }
 .nameInput{
     width: 78vw;
-    height: 25px;
+    height: 28px;
     font-size: 0.9rem;
     padding: 2px 6px;
     outline: solid 0.5px rgb(192, 192, 192);
@@ -47,7 +47,7 @@ font-weight: 400;
 
 .emailInput{
     width: 78vw;
-    height: 25px;
+    height: 28px;
     font-size: 0.9rem;
     padding: 2px 6px;
     outline: solid 0.5px rgb(192, 192, 192);
