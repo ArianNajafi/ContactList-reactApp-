@@ -1,4 +1,4 @@
-import React, { Children, useState } from "react";
+import React, { Children, useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import Header from "../components/Header/Header";
 import "./Layout.css"
@@ -8,7 +8,19 @@ export const contactsContextSpatcher = React.createContext();
 export const contactsActions = React.createContext();
 
 const Layout = ({ children }) => {
-    const [contacts, setContact] = useState([]);
+    const [contacts, setContact] = useState(JSON.parse(localStorage.getItem("contacts")) || []);
+
+    // useEffect(() => {
+    //     const savedContacts = JSON.parse(localStorage.getItem("contacts"));
+    //     if (savedContacts) {
+    //         console.log(savedContacts);
+    //         setContact(savedContacts);
+    //     }
+    // }, [])
+
+    useEffect(() => {
+        localStorage.setItem("contacts", JSON.stringify(contacts));
+    }, [contacts]);
 
     const actions = (actionName, contact) => {
         if (actionName === "deleteContact") {

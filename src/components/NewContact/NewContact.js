@@ -18,7 +18,7 @@ const NewContact = () => {
             Swal.fire({
                 text: "Name can't be empity ❗",
                 position: "top",
-                width: 190,
+                width: 195,
                 showConfirmButton: false,
                 customClass: "swal",
                 timer: 1500,
@@ -30,7 +30,7 @@ const NewContact = () => {
             Swal.fire({
                 text: "Email can't be empity ❗",
                 position: "top",
-                width: 190,
+                width: 195,
                 showConfirmButton: false,
                 customClass: "swal",
                 timer: 1500,
@@ -43,7 +43,7 @@ const NewContact = () => {
             Swal.fire({
                 text: "New contact added ✅",
                 position: "top",
-                width: 190,
+                width: 195,
                 showConfirmButton: false,
                 customClass: "swal",
                 timer: 1500,
