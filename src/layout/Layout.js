@@ -23,7 +23,11 @@ const Layout = ({ children }) => {
     }, [contacts]);
 
     const actions = (actionName, contact) => {
-        if (actionName === "deleteContact") {
+        if (actionName === "addContact") {
+            setContact([...contacts, { ...contact, id: Math.floor(Math.random() * 100) + 1 }]);
+        }
+
+        else if (actionName === "deleteContact") {
             const newContacts = contacts.filter((item) => {
                 return item.id !== contact.id;
             })

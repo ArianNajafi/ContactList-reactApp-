@@ -2,14 +2,13 @@ import { useContext, useState } from "react";
 import './NewContact.css'
 
 
-import { contactsContext, contactsContextSpatcher } from "../../layout/Layout";
+import { contactsActions, contactsContext, contactsContextSpatcher } from "../../layout/Layout";
 import Swal from "sweetalert2";
 
 const NewContact = () => {
     const [newContactInfo, setNewContactInfo] = useState({ name: "", email: "" });
 
-    const contacts = useContext(contactsContext);
-    const setContact = useContext(contactsContextSpatcher);
+    const actions = useContext(contactsActions);
 
 
     const clickBtnHandler = (e) => {
@@ -38,7 +37,7 @@ const NewContact = () => {
                 background: "rgb(250, 250, 250)",
             })
         else {
-            setContact([...contacts, { ...newContactInfo, id: Math.floor(Math.random() * 100) + 1 }]);
+            actions("addContact", newContactInfo)
             setNewContactInfo({ name: "", email: "" });
             Swal.fire({
                 text: "New contact added ✅",
